@@ -53,6 +53,7 @@ if [ "$url" = "null" ]; then
   exit 1
 fi
 
+echo "$repository" > $destination/repository
 echo "$url" > $destination/url
 echo "$version" > $destination/version
 echo "$sha1" > $destination/sha1
